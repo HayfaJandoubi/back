@@ -96,3 +96,39 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+
+Créer un manager (POST http://localhost:3003/managers) :
+Apply to managers.con...
+
+{
+    "nom": "Martin",
+    "prenom": "Pierre",
+    "email": "pierre.martin@manager.com",
+    "siege": "Paris",
+    "telephone": "0612345678",
+    "role": "manager",
+    "status": "active"
+}
+
+Vérifier que le manager a été créé (GET http://localhost:3003/managers)
+Une fois que vous avez l'ID du manager créé, créer un technicien (POST http://localhost:3003/technicians) :
+Apply to README.md
+{
+    "fullName": "Jean Dupont",
+    "email": "jean.dupont@technicien.com",
+    "phone": "0612345678",
+    "region": "Île-de-France",
+    "password": "Technicien123",
+    "managerId": 1
+}
+
+////// {
+    "nom": "Dubois",
+    "prenom": "Marie",
+    "email": "marie.dubois@manager.com",
+    "siege": "Lyon",
+    "telephone": "0687654321",
+    "role": "manager",
+    "status": "active"
+}
